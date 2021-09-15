@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Taarangna'21 Sponsor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+    <script src="scripts.js"></script>
+    
+  </head>
+  
+  <body>
+      <!--Animation-->
+      <div id="container">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin slice" viewBox="0 0 640 360" id="svg" class="button">
+           <defs>
+              <style type="text/css">
+                          
+                    @import url(https://fonts.googleapis.com/css?family=Righteous);
+                    text{font-family:Righteous, cursive;text-opacity:.8}
+                    .title-1{font-weight:500;font-size:80px;opacity:.1;stroke:#e5e5e3;stroke-width:10}
+                    .title-2{font-weight:500;font-size:80px}
+                    .subtitle{font-weight:500;font-size:20px}
+                    .color-1{fill:#78ff69}
+                    .color-2{fill:#69c3ff}
+                    .color-3{fill:#f069ff}
+                    .color-4{fill:#ffa569}
+                    .color-5{fill:#e5e5e3}
+                    .color-6{fill:#002540}
+                    .color-7{fill:#001626}
+                    .opacity{fill-opacity:.2}
+                    .button{cursor:pointer}
+                    svg{visibility:hidden;width:100%;padding-bottom: 0px;height: 100%; overflow: visible}
+                    
+              </style>
+           </defs>
+           <script type="text/javascript" xlink:href="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+           <script type="text/javascript">
+              <![CDATA[
+                  document.addEventListener("DOMContentLoaded", function(event) {
+                    window.onload = function() {
+                      var svg = document.getElementById("svg"),
+                          poly1 = document.getElementById("poly1"),
+                          poly2 = document.getElementById("poly2"),
+                          poly3 = document.getElementById("poly3"),
+                          poly4 = document.getElementById("poly4"),
+                          circ1 = document.getElementById("circ1"),
+                          circ2 = document.getElementById("circ2"),
+                          circ3 = document.getElementById("circ3"),
+                          circ4 = document.getElementById("circ4"),
+                          laser1 = document.getElementById("laser1"),
+                          laser2 = document.getElementById("laser2"),
+                          laser3 = document.getElementById("laser3"),
+                          laser4 = document.getElementById("laser4");
+                      TweenMax.set(svg, {visibility:"visible"});
+                      TweenMax.set([poly1, poly2, poly3, poly4, circ1, circ2, circ3, circ4, laser1, laser2, laser3, laser4], {autoAlpha:0});
+                      var mainTl = new TimelineMax({repeat:-1});
+                      mainTl.timeScale(1.8);
+                      function getTl1() {
+                        var tl1 = new TimelineMax({repeat:-1});
+                        tl1.set(poly1, {autoAlpha:1});
+                        tl1.to(poly1, 4, {attr:{d:"M-640,0 100,510 -400,0Z"}, ease:Power0.easeNone});
+                        tl1.set(poly1, {autoAlpha:0});
+                        return tl1;
+                      }
+                      function getTl2() {
+                        var tl2 = new TimelineMax({repeat:-1});
+                        tl2.set(poly2, {autoAlpha:1});
+                        tl2.to(poly2, 4, {attr:{d:"M500,-150 1400,360 1200,360Z"}, ease:Power0.easeNone});
+                        tl2.set(poly2, {autoAlpha:0});
+                        return tl2;
+                      }
+                      function getTl3() {
+                        var tl3 = new TimelineMax({repeat:-1});
+                        tl3.set(poly3, {autoAlpha:1});
+                        tl3.to(poly3, 4, {attr:{d:"M100,-150 -400,360 -640,360Z"}, ease:Power0.easeNone});
+                        tl3.set(poly3, {autoAlpha:0});
+                        return tl3;
+                      }
+                      function getTl4() {
+                        var tl4 = new TimelineMax({repeat:-1});
+                        tl4.set(poly4, {autoAlpha:1});
+                        tl4.to(poly4, 4, {attr:{d:"M1200,0 500,510 1400,0Z"}, ease:Power0.easeNone});
+                        tl4.set(poly4, {autoAlpha:0});
+                        return tl4;
+                      }
+                      function getTl5() {
+                        var tl5 = new TimelineMax({repeat:-1});
+                        tl5.to(circ1, .4, {autoAlpha:1, attr:{r:"50"}});
+                        tl5.to(circ1, .4, {autoAlpha:0, attr:{r:"20"}});
+                        tl5.to(circ3, .4, {autoAlpha:1, attr:{r:"50"}});
+                        tl5.to(circ3, .4, {autoAlpha:0, attr:{r:"20"}});
+                        tl5.to(circ4, .4, {autoAlpha:1, attr:{r:"50"}});
+                        tl5.to(circ4, .4, {autoAlpha:0, attr:{r:"20"}});
+                        tl5.to(circ2, .4, {autoAlpha:1, attr:{r:"50"}});
+                        tl5.to(circ2, .4, {autoAlpha:0, attr:{r:"20"}});
+                        return tl5;
+                      }
+                      function getTl6() {
+                        var tl6 = new TimelineMax({repeat:-1});
+                        tl6.set(laser1, {autoAlpha:1});
+                        tl6.to(laser1, 4, {attr:{d:"M-200,280 700,940 700,955z"}, ease:Power0.easeNone});
+                        tl6.set(laser1, {autoAlpha:0});
+                        return tl6;
+                      }
+                      function getTl7() {
+                        var tl7 = new TimelineMax({repeat:-1});
+                        tl7.set(laser2, {autoAlpha:1});
+                        tl7.to(laser2, 4, {attr:{d:"M-200,280 700,940 700,955z"}, ease:Power0.easeNone});
+                        tl7.set(laser2, {autoAlpha:0});
+                        return tl7;
+                      }
+                      function getTl8() {
+                        var tl8 = new TimelineMax({repeat:-1});
+                        tl8.set(laser3, {autoAlpha:1});
+                        tl8.to(laser3, 4, {attr:{d:"M-200,280 700,940 700,955z"}, ease:Power0.easeNone});
+                        tl8.set(laser3, {autoAlpha:0});
+                        return tl8;
+                      }
+                      function getTl9() {
+                        var tl9 = new TimelineMax({repeat:-1});
+                        tl9.set(laser4, {autoAlpha:1});
+                        tl9.to(laser4, 4, {attr:{d:"M-200,280 700,940 700,955z"}, ease:Power0.easeNone});
+                        tl9.set(laser4, {autoAlpha:0});
+                        return tl9;
+                      }
+                      function init() {
+                        mainTl.add(getTl1(), 0).add(getTl2(), 3).add(getTl3(), 1).add(getTl4(), 2).add(getTl5(), 0).add(getTl6(), 0).add(getTl7(), 1).add(getTl8(), 2).add(getTl9(), 3);
+                      }
+                      init();
+                    };
+                  });
+              ]]>
+           </script> 
+           <path d="M0 0h640v360H0z" class="color-6"/>
+           <circle id="circ1" cx="80" cy="120" r="20" class="color-4 opacity"/>
+           <circle id="circ2" cx="320" cy="70" r="20" class="color-3 opacity"/>
+           <circle id="circ3" cx="550" cy="100" r="20" class="color-2 opacity"/>
+           <circle id="circ4" cx="160" cy="280" r="20" class="color-1 opacity"/>
+           <path id="laser1" d="M-180,80 700,-750 700,-740z" class="color-1 opacity"/>
+           <path id="laser2" d="M-180,80 700,-750 700,-740z" class="color-2 opacity"/>
+           <path id="laser3" d="M-180,80 700,-750 700,-740z" class="color-3 opacity"/>
+           <path id="laser4" d="M-180,80 700,-750 700,-740z" class="color-4 opacity"/>
+           <path id="poly1" d="M1200,0 500,510 1400,0 Z" class="color-1 opacity"/>
+           <path id="poly2" d="M100,-150 -400,360 -640,360Z" class="color-2 opacity"/>
+           <path id="poly3" d="M500,-150 1400,360 1200,360Z" class="color-3 opacity"/>
+           <path  id="poly4" d="M-640,0 100,510 -400,0Z" class="color-4 opacity"/>
+           
+        </svg>
+     </div>
+     <!--NAVBAR-->
+      <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-xl py-0 fixed-top">
+        <a href="#" class="navbar-brand logo">
+            <img src="/images/LOGO.jpg">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="./home.html" class="nav-link" style="color: #eed9b7">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link" style="color: #eed9b7">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Events.html" class="nav-link" style="color: #eed9b7">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Schedule.html" class="nav-link" style="color: #eed9b7">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Pronite.html" class="nav-link" style="color: #eed9b7">Pronite</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Sonsors.html" class="nav-link" style="color: #eed9b7">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Meet the team.html" class="nav-link" style="color: #eed9b7">Meet the team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Gallery.html" class="nav-link" style="color: #eed9b7">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container max-width-xs">
+        <div class="text-center">
+            <h1 class= "heading-top" font weight: bold text-uppercase text-align: center>Taarangna'21 Sponsors</h1>
+                    <p> <a class="cd-article-link" href="https://codyhouse.co/gem/3d-rotating-navigation"></a>                           
+                        <div class="container">
+                  <!-- Sponsors -->
+                  
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="cardt">
+                                    <div class="contentt">
+                                        <div style="color:rgb(255, 255, 255)"><b>TITLE SPONSOR</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="card">
+                                    <div class="content">
+                                    
+                                    <a href="https://www.ril.com/OurCompany/About.aspx" target="blank">
+                                        <img  src="./images/reliance.jpg"  id="mainsponsor"
+                                        alt="main sponsor"> 
+                                    </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                
+                  
+                  
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="cardt">
+                                    <div class="contentt">
+                                        <div style="color:rgb(255, 255, 255)"><b>EVENT SPONSORS</b></div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="card">
+                                    <div class="content">
+                                        <img  src="./images/reliance.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="card">
+                                    <div class="content">
+                                        <img src="./images/Lumiere.jpeg">
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div data-tilt data-tilt-scale="1.1">
+                            <div class="card">
+                                <div class="content">
+                                    <img class="slide" src="./images/La Ragazza .jpg">
+                                </div>
+                            </div>
+                            </div>
+                    
+                            <div data-tilt data-tilt-scale="1.1">
+                            <div class="card">
+                                <div class="content">
+                                    <img class="slide" src="./images/Khoj City.jpg">
+                                </div>
+                            </div>
+                            </div>
+                  
+                        
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="cardt">
+                                    <div class="contentt">
+                                        <div style="color:rgb(255, 255, 255)"><b>EDUCATION PARTNER</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="card">
+                                    <div class="content">
+                                        <img class="slide" src="./images/Geeks for geeks.png">
+                                    </div>
+                                </div>
+                            </div>
+               
+                    
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="cardt">
+                                    <div class="contentt">
+                                        <div style="color:rgb(255, 255, 255)"><b>SKINCARE PARTNERS</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="card">
+                                    <div class="content">
+                                        <img class="slide" src="./images/bioblush.jpg" style="height: 210px">
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="card">
+                                    <div class="content">
+                                        <img class="slide" src="./images/inaya.jpeg" style="height: 210px">
+                                    </div>
+                                </div>
+                            </div>
+                
+                
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="cardt">
+                                    <div class="contentt">
+                                        <div style="color:rgb(255, 255, 255)"><b>DIGITAL PARTNER</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="card">
+                                    <div class="content">
+                                        <img class="slide" src="./images/Eat My News .jpg">
+                                    </div>
+                                </div>
+                            </div>
+            
+                    
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="cardt">
+                                    <div class="contentt">
+                                        <div style="color:rgb(255, 255, 255)"><b>CREATIVE PARTNER</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="card">
+                                    <div class="content">
+                                        <img class="slide" src="./images/Kreative_moments.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                
+                
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="cardt">
+                                    <div class="contentt">
+                                        <div style="color:rgb(255, 255, 255)"><b>INDUSTRIAL TRAINING PARTNER</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="card">
+                                    <div class="content">
+                                        <img class="slide" src="./images/inmovidu.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                
+        
+            
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="cardt">
+                                    <div class="contentt">
+                                        <div style="color:rgb(255, 255, 255)"><b>MOBILE ACCESSORIES PARTNER</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div data-tilt data-tilt-scale="1.1">
+                                <div class="card">
+                                    <div class="content">
+                                        <img class="slide" src="./images/wrapcart.jpg">
+                                    </div>
+                                </div>
+                            </div> 
+                
+        
+                        </div>
+                    </p>
+                </div>
+        <section class="footer">
+            <h5>created by <i class="fas fa-heart"></i> Ritika | all rights reserved.</h5>
+        </section>
+        
+    </div>
+    
+    <!-- <script>
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 3
+
+                }
+            }]
+
+        });
+    });
+    </script>
+    -->
+
+</body>
+</html>
