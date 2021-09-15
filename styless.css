@@ -7,6 +7,21 @@ body, html {
     margin: 0;
     padding: 0;
 }
+@media (max-width: 768px){
+  #container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    height: max-content;
+    background: cover;
+    overflow:hidden; 
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
 #container{
   position:fixed;
 	background: cover;
